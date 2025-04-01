@@ -42,6 +42,7 @@ body {
     min-height: 100vh;
     overflow: hidden;
     transition: var(--transition-normal);
+    user-select: none;
 }
 
 .container {
@@ -106,7 +107,7 @@ body {
 }
 
 .folder-nav-header {
-    padding: 1.22rem;
+    padding: 1.15rem;
     background: var(--bg-tertiary);
     border-bottom: 2px solid var(--accent-color);
     display: flex;
@@ -257,7 +258,7 @@ body {
     color: var(--text-primary);
     font-size: 0.9rem;
     width: 300px;
-    height: 25px;
+    height: 42px;
     transition: var(--transition-normal);
     box-shadow: var(--shadow-sm);
 }
@@ -324,7 +325,7 @@ body {
 }
 
 .btn {
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -435,7 +436,7 @@ body {
 
 .preview-content {
     padding: 1rem;
-    height: calc(100vh - 175px);
+    height: calc(100vh - 143px);
     position: fixed;
     top: 105px;
     left: 405px;
@@ -443,7 +444,7 @@ body {
     bottom: 0;
     overflow: hidden;
     border-radius: 5px;
-    width: calc(100% - 437px);
+    width: calc(100% - 403px);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -492,7 +493,6 @@ body {
     font-size: 14px;
     text-align: left;
     justify-content: center;
-    height: 100%;
 }
 
 .folder-nav-description i {
@@ -593,16 +593,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 4px;
     color: var(--text-secondary);
-    font-size: 11px;
-    padding-top: 10px;
+    font-size: 15px;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 35px;
+    height: 50px;
     background-color: var(--bg-primary);
     border-top: 1px solid var(--border-color);
 
@@ -953,7 +952,7 @@ body {
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
     position: fixed;
-    top: 26px;
+    top: 28px;
     left: 27rem;
     z-index: 1000;
 }
@@ -1004,7 +1003,7 @@ body {
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
     position: fixed;
-    top: 26px;
+    top: 28px;
     right: 1.8rem;
     z-index: 1000;
 }
@@ -1017,16 +1016,17 @@ body {
 .clock-style {
     font-family: 'Digital Mono', monospace;
     background-color: var(--bg-secondary);
-    color: var(--text-color);
+    color: var(--accent-color);
+    text-shadow: 0 0 8px var(--accent-color);
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius-sm);
     box-shadow: var(--shadow-md);
     font-size: 1.5rem;
     text-align: center;
     position: fixed;
-    bottom: -23px;
-    right: 0px;
-    height: 30px;
+    bottom: 0px;
+    right: 13px;
+    height: 50px;
     z-index: 1001;
 }
 
